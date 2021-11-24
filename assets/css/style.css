@@ -1,11 +1,45 @@
+:root {
+    --primary-color: #ba0909;
+    --secondary-color: #3236a8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(50, 54, 168, 0.9);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* HEADER / NAV STYLES */
+
 header {
     padding: 20px 35px;
-    background-color: #3236a8;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--primary-color);
 }
 
 header a {
     text-decoration: none;
-    color: #ba0909;
+    color: var(--primary-color);
+}
+
+header nav {
+    margin: 7px 0;
 }
 
 header nav ul {
@@ -21,3 +55,5 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+
+/* HEADER / NAV STYLES END */
