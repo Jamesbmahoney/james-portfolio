@@ -66,8 +66,8 @@ footer nav ul li a {
 
 /* PROJECT STYLE BEGINS */
 
-project-links:hover {
-    background-color: violet;
+.highlight:hover {
+    opacity: .5;
 }
 
 /* PROJECT STYLE ENDS */
