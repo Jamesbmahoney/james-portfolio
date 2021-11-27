@@ -72,10 +72,13 @@ footer nav ul li a {
 
 /* PROJECTS STYLE BEGINS */
 
-
-
 .highlight:hover {
     opacity: .5;
+}
+
+.float-left {
+    float: left;
+    margin: 25px;
 }
 
 /* PROJECTS STYLE ENDS */
