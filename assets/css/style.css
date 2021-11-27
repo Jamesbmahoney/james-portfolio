@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #ba0909;
-    --secondary-color: #3236a8;
+    --primary-color: #000000;
+    --secondary-color: #434347;
 }
 
 * {
@@ -10,11 +10,12 @@
 }
 
 body {
-    background-color: rgba(50, 54, 168, 0.9);
+    background-color: rgba(67, 67, 71, 0.5);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--primary-color);
 }
 
-/* HEADER / NAV STYLES */
+/* HEADER / FOOTER STYLES */
 
 header,
 footer {
@@ -23,8 +24,13 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+}
+
+header {
     position: sticky;
     position: -webkit-sticky;
+    top: 0;
 }
 
 header h1,
@@ -62,7 +68,7 @@ footer nav ul li a {
     font-size: 1.55vw;
 }
 
-/* HEADER / NAV STYLES END */
+/* HEADER / FOOTER STYLES END */
 
 /* PROJECT STYLE BEGINS */
 
