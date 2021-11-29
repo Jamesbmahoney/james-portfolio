@@ -20,10 +20,9 @@ header,
 footer {
     padding: 20px 0px 10px 0px;
     background-color: var(--secondary-color);
-
-    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    display: flex;
+    z-index: 1;
     
 }
 
@@ -68,24 +67,26 @@ footer nav ul li a {
     font-size: 1.55vw;
 }
 
-
-
 /* HEADER / FOOTER STYLES END */
+
+/* HERO STYLE BEGINS */
 
 .hero {
     display: flex;
+    position: relative;
     justify-content: left;
     flex-wrap: wrap;
     background-image: url(../images/Technology-003.jpg);
     background-size: cover;
     background-position: center;
+    margin-bottom: 10px;
 }
 
 .hero h4 {
-    text-align: end;  
-    padding: 258px 13px 0px 550px;    
     color: var(--primary-color);
     background-color: rgba(0, 0, 0, .6);
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
 }
 
 .hero img {
@@ -94,25 +95,26 @@ footer nav ul li a {
     max-width: 230px;
 }
 
-/* ABOUT ME STYLES BEGIN */
-
-
-/* ABOUT ME STYLE ENDS */
-
-.projects { 
-    margin-bottom: 10px;
-    padding: 20px 0px 20px 0px;
-    height: 100px;
-    font-size: 36px;
+.container {
+    border: solid 1px #0000;
 }
+
+.quote {
+    position: absolute;
+    bottom: 0;
+    right: 0;  
+}
+
+/* HERO STYLE ENDS */
+
+/* ABOUT ME / PROJECT STYLES BEGIN */
+
 
 .border {
     border-style: solid;
     border-width: 5px;
     border-color: var(--primary-color);
 }
-
-/* PROJECTS STYLE BEGINS */
 
 .highlight:hover {
     opacity: .5;
@@ -132,7 +134,6 @@ footer nav ul li a {
     width: 25%;
     float: left;
     margin-bottom: 20px;
-    padding: 20px 0px 20px 0px;
     height: 300px;
     font-size: 36px;
 }
@@ -141,7 +142,6 @@ footer nav ul li a {
     width: 75%;
     float: left;
     margin-bottom: 20px;
-    padding: 20px 0px 20px 0px;
     font-size: 30px;
     border-left: 5px solid var(--primary-color);
 }
@@ -155,20 +155,54 @@ footer nav ul li a {
     padding: 0px;
 }
 
-/* PROJECTS STYLE ENDS */
-
-/* FOOTER STYLES BEGINS */  
-
-/* FOOTER STYLES ENDS */
+/* ABOUT ME / PROJECT STYLE ENDS */
 
 /* MEDIA QUERY FOR SMALLER SCREENS */
 
 @media screen and (max-width: 980px) {
    header,
-   body,
    footer {
-       padding-bottom: 0;
-       justify-content: space-between;
-       position: relative;
-   }   
+       font-weight: bold;
+       margin: 0;
+       font-size: 5vw;
+       color: var(--primary-color);
+   }  
+   
+   .hero {
+    flex-wrap: wrap;   
+    text-align: right;
+    line-height: 1.3;
+   }
+
+   .hero div{
+    font-size: 1vw;
+   }
+}   
+
+   @media screen and (max-width: 960px) {
+
+   .projects {
+       margin-bottom: 10px;
+       font-size: inherit;
+   }
+
+   .hero div{
+    font-size: 1vw;
+   }
+   
+    .left {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    font-size: 5vw;
+    border-bottom: 5px solid var(--primary-color);
+   }
+
+    .right  {
+    width: 100%;
+    text-align: justify;
+    font-size: 5vw;
+    border-left: transparent;
+   }
+
 }    
