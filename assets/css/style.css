@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #000000;
-    --secondary-color: #434347;
+    --primary-color: #0776b6;
+    --secondary-color: #000000;
 }
 
 * {
@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: rgba(67, 67, 71, 0.5);
+    background-color: rgba(46, 80, 92);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--primary-color);
 }
@@ -19,8 +19,9 @@ body {
 
 header,
 footer {
-    padding: 20px 35px;
+    padding: 20px 10px;
     background-color: var(--secondary-color);
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -70,6 +71,50 @@ footer nav ul li a {
 
 /* HEADER / FOOTER STYLES END */
 
+.hero {
+    height: 124px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(../images/Technology-003.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero img {
+    display: block;
+    margin: auto;
+    max-width: 100px;
+}
+
+/* ABOUT ME STYLES BEGIN */
+
+
+.about-me,
+.projects {
+    margin-bottom: 32px;
+}
+
+.aboutme div {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-size: 36px;
+}
+
+.about-me h2,
+.projects h2 {
+    margin-left: 10px;
+    text-align: justify;
+    font-weight: bolder;
+}
+
+.about-me p {
+    margin: 10px;
+    text-align: justify;
+}
+
+/* ABOUT ME STYLE ENDS */
+
 /* PROJECTS STYLE BEGINS */
 
 .highlight:hover {
@@ -79,6 +124,11 @@ footer nav ul li a {
 .float-left {
     float: left;
     margin: 25px;
+}
+
+.float-right {
+    float: right;
+    margin: 25px
 }
 
 /* PROJECTS STYLE ENDS */
