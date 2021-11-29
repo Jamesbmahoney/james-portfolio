@@ -80,6 +80,12 @@ footer nav ul li a {
     background-position: center;
 }
 
+.hero h4 {
+    text-align: end;
+    padding: 104px 13px;
+    color: var(--secondary-color);
+}
+
 .hero img {
     display: block;
     margin: auto;
