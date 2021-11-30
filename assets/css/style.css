@@ -211,7 +211,7 @@ footer nav ul li a {
 } 
 
 @media screen and (max-width: 625px) {
-  * {
-      margin: -1px;
+  html {
+      zoom: 50%
   }  
 }
