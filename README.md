@@ -8,7 +8,7 @@ A website to house all of my deployed works as well as my contact information fo
 *CSS
 
 ## Image
-<img src="./assets/images/website_snapshot.jpg" />
+<img src="./assets/images/website_snapshot.JPG" />
 
 ##  Website
 https://jamesbmahoney.github.io/james-portfolio
